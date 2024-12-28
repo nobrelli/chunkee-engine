@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ef2b99fe-abb5-4cf5-81fe-3b7edcbd7259}</ProjectGuid>
+    <RootNamespace>ChunkeeEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <BasePlatformToolset>v143</BasePlatformToolset>
+    <UseInteloneTBB>false</UseInteloneTBB>
+    <InstrumentInteloneTBB>false</InstrumentInteloneTBB>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseInteloneTBB>false</UseInteloneTBB>
+    <InstrumentInteloneTBB>false</InstrumentInteloneTBB>
+    <BasePlatformToolset>v143</BasePlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>E:\RYENV\LIBS\MSVC\SDL2_IMAGE\INCLUDE;E:\RYENV\LIBS\MSVC\SDL2\INCLUDE;E:\RYENV\LIBS\MSVC\SDL2_TTF\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CCppSupport>Cpp20Support</CCppSupport>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <AdditionalOptions> /GH /Gh %(AdditionalOptions)</AdditionalOptions>
+      <SYCLShowVerboseInformation>false</SYCLShowVerboseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\RYENV\LIBS\MSVC\SDL2_IMAGE\LIB\STATIC\x64\DEBUG;E:\RYENV\LIBS\MSVC\SDL2\LIB\STATIC\x64\DEBUG;E:\RYENV\LIBS\MSVC\SDL2_TTF\LIB\STATIC\DEBUG\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2d.lib;SDL2maind.lib;SDL2_image-staticd.lib;winmm.lib;imm32.lib;version.lib;setupapi.lib;$(MICROPROFILERDIR)/micro-profiler_$(PlatformName).lib;%(AdditionalDependencies);SDL2_ttf.lib</AdditionalDependencies>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SYCLShowVerboseInformation>false</SYCLShowVerboseInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>E:\RYENV\LIBS\MSVC\SDL2_IMAGE\INCLUDE;E:\RYENV\LIBS\MSVC\SDL2\INCLUDE;E:\RYENV\LIBS\MSVC\SDL2_TTF\INCLUDE;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeedHighLevel</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <CCppSupport>Cpp20Support</CCppSupport>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ShowIncludes>false</ShowIncludes>
+      <SYCLShowVerboseInformation>false</SYCLShowVerboseInformation>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <OptimizeForWindowsApplication>true</OptimizeForWindowsApplication>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image-static.lib;winmm.lib;imm32.lib;version.lib;setupapi.lib;%(AdditionalDependencies);SDL2_ttf.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>E:\RYENV\LIBS\MSVC\SDL2_IMAGE\LIB\STATIC\x64\RELEASE;E:\RYENV\LIBS\MSVC\SDL2\LIB\STATIC\x64\RELEASE;E:\RYENV\LIBS\MSVC\SDL2_TTF\LIB\STATIC\RELEASE\x64</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SYCLShowVerboseInformation>false</SYCLShowVerboseInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cxx" />
+    <ClCompile Include="Game.cxx" />
+    <ClCompile Include="Graphics\Color.cxx" />
+    <ClCompile Include="Graphics\Font.cxx" />
+    <ClCompile Include="Graphics\Image.cxx" />
+    <ClCompile Include="Graphics\Renderer.cxx" />
+    <ClCompile Include="Graphics\Texture.cxx" />
+    <ClCompile Include="Main.cxx" />
+    <ClCompile Include="Math\Easer.cxx" />
+    <ClCompile Include="Math\Rect.cxx" />
+    <ClCompile Include="Math\RectF.cxx" />
+    <ClCompile Include="Math\Tweener.cxx" />
+    <ClCompile Include="Math\Vector2.cxx" />
+    <ClCompile Include="Math\Vector2F.cxx" />
+    <ClCompile Include="Nodes\GUI\Button.cxx" />
+    <ClCompile Include="Nodes\GUI\Component.cxx" />
+    <ClCompile Include="Nodes\GUI\Container.cxx" />
+    <ClCompile Include="Nodes\GUI\Label.cxx" />
+    <ClCompile Include="Nodes\GUI\SolidButton.cxx" />
+    <ClCompile Include="Nodes\Node.cxx" />
+    <ClCompile Include="Nodes\Scene.cxx" />
+    <ClCompile Include="Nodes\Sprite.cxx" />
+    <ClCompile Include="Nodes\Transformable.cxx" />
+    <ClCompile Include="Scenes\MenuScene.cxx" />
+    <ClCompile Include="Scenes\PlayScene.cxx" />
+    <ClCompile Include="SceneTree.cxx" />
+    <ClCompile Include="Servers\FontServer.cxx" />
+    <ClCompile Include="Servers\ImageServer.cxx" />
+    <ClCompile Include="Window.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Components.hxx" />
+    <ClInclude Include="Config.hxx" />
+    <ClInclude Include="Engine.hxx" />
+    <ClInclude Include="Game.hxx" />
+    <ClInclude Include="Graphics\Color.hxx" />
+    <ClInclude Include="Graphics\Font.hxx" />
+    <ClInclude Include="Graphics\Image.hxx" />
+    <ClInclude Include="Graphics\Renderer.hxx" />
+    <ClInclude Include="Graphics\Texture.hxx" />
+    <ClInclude Include="Logger.hxx" />
+    <ClInclude Include="Math\Easer.hxx" />
+    <ClInclude Include="Math\Rect.hxx" />
+    <ClInclude Include="Math\RectF.hxx" />
+    <ClInclude Include="Math\Tweener.hxx" />
+    <ClInclude Include="Math\Vector2.hxx" />
+    <ClInclude Include="Math\Vector2F.hxx" />
+    <ClInclude Include="Nodes\GUI\Button.hxx" />
+    <ClInclude Include="Nodes\GUI\Component.hxx" />
+    <ClInclude Include="Nodes\GUI\Container.hxx" />
+    <ClInclude Include="Nodes\GUI\Label.hxx" />
+    <ClInclude Include="Nodes\GUI\SolidButton.hxx" />
+    <ClInclude Include="Nodes\Node.hxx" />
+    <ClInclude Include="Nodes\Scene.hxx" />
+    <ClInclude Include="Nodes\Sprite.hxx" />
+    <ClInclude Include="Nodes\Transformable.hxx" />
+    <ClInclude Include="Scenes\MenuScene.hxx" />
+    <ClInclude Include="Scenes\PlayScene.hxx" />
+    <ClInclude Include="SceneTree.hxx" />
+    <ClInclude Include="Servers\FontServer.hxx" />
+    <ClInclude Include="Servers\ImageServer.hxx" />
+    <ClInclude Include="Types.hxx" />
+    <ClInclude Include="Window.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Graphics\PostBuild.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

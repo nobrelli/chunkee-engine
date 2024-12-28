@@ -1,0 +1,1 @@
+copy "E:\RYENV\LIBS\MSVC\SDL2\LIB\x64\SDL2.dll" "$(TargetDir)"

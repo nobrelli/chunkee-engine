@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cxx" />
+    <ClCompile Include="Engine.cxx" />
+    <ClCompile Include="Window.cxx" />
+    <ClCompile Include="Math\Vector2.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Color.cxx">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Renderer.cxx">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cxx" />
+    <ClCompile Include="Servers\ImageServer.cxx">
+      <Filter>Servers</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTree.cxx" />
+    <ClCompile Include="Nodes\Node.cxx">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Scene.cxx">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Image.cxx">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\MenuScene.cxx">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Font.cxx">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Servers\FontServer.cxx">
+      <Filter>Servers</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Rect.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\RectF.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2F.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\GUI\Label.cxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cxx">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Transformable.cxx">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\GUI\Button.cxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\GUI\SolidButton.cxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Tweener.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Easer.cxx">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\Sprite.cxx">
+      <Filter>Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenes\PlayScene.cxx">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\GUI\Component.cxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Nodes\GUI\Container.cxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.hxx" />
+    <ClInclude Include="Logger.hxx" />
+    <ClInclude Include="Window.hxx" />
+    <ClInclude Include="Math\Vector2.hxx">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Color.hxx">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Renderer.hxx">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.hxx" />
+    <ClInclude Include="Game.hxx" />
+    <ClInclude Include="Servers\ImageServer.hxx">
+      <Filter>Servers</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTree.hxx" />
+    <ClInclude Include="Nodes\Node.hxx">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Scene.hxx">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.hxx" />
+    <ClInclude Include="Graphics\Image.hxx">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\MenuScene.hxx">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Font.hxx">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Servers\FontServer.hxx">
+      <Filter>Servers</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\GUI\Component.hxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Rect.hxx">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\RectF.hxx">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2F.hxx">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\GUI\Label.hxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.hxx">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Transformable.hxx">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\GUI\Button.hxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\GUI\SolidButton.hxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Tweener.hxx">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Easer.hxx">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\Sprite.hxx">
+      <Filter>Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenes\PlayScene.hxx">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Nodes\GUI\Container.hxx">
+      <Filter>Nodes\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Components.hxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Math">
+      <UniqueIdentifier>{3c53576b-4904-47d2-b0b7-26bdd339ccc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{6473ef70-df83-46a2-bd85-34d4ecb4eb1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Servers">
+      <UniqueIdentifier>{971bbe03-972e-42c8-9bf5-398bf021c864}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes">
+      <UniqueIdentifier>{4fe39872-26fc-49c6-97ee-3dd91bd91aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{cff98e5a-c1af-4581-bdae-53a8b856ec21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nodes\GUI">
+      <UniqueIdentifier>{29159668-52d8-4486-9761-2af15d4f641f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Graphics\PostBuild.txt" />
+  </ItemGroup>
+</Project>
